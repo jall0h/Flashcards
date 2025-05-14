@@ -45,7 +45,7 @@ const Flashcard = ({ deck }: Props) => {
       <button id="answer-btn" onClick={displayAnswer}>
         Show Answer
       </button>
-      <button onClick={nextCard}>Again</button>
+      <button onClick={nextCard}>Next</button>
     </>
   );
 };
