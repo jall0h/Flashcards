@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Flashcard from "./components/Flashcards";
 import Routes from "./routes/routes";
+import Navbar from "./components/Navbar";
 
 export interface Card {
   question: string;

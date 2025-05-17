@@ -1,16 +1,32 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FlashcardView from "../pages/FlashcardView";
 import DeckCreation from "../pages/DeckCreation";
+import ProtectedRoute from "./ProtectedRoute";
+import Dashboard from "../pages/Dashboard";
+import Decks from "../pages/Decks";
 
 const Routes = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <FlashcardView />,
-    },
-    {
-      path: "/createdeck",
-      element: <DeckCreation />,
+      element: <ProtectedRoute />,
+      children: [
+        {
+          path: "/viewdeck",
+          element: <FlashcardView />,
+        },
+        {
+          path: "/createdeck",
+          element: <DeckCreation />,
+        },
+        {
+          path: "/",
+          element: <Dashboard />,
+        },
+        {
+          path: "/decks",
+          element: <Decks />,
+        },
+      ],
     },
   ]);
 

@@ -41,9 +41,57 @@
   color: #888;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  font-family: "Patrick Hand SC";
+  background-color: var(--pastel-light-yellow);
+}
+:root {
+  --pastel-blue: #79addc;
+  --pastel-orange: #ffc09f;
+  --pastel-yellow: #ffee93;
+  --pastel-light-yellow: #fcf5c7;
+  --pastel-pink: #ffc09f;
+  --pastel-green: #adf7b6;
+}
+/* Flashcard Page */
+
 #answer {
   visibility: hidden;
 }
 #answer.display {
   visibility: visible;
+}
+
+/* Navbar */
+#navbar {
+  top: 0px;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar-link {
+  font-size: 30px;
+  text-decoration: none;
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--pastel-pink);
+  text-shadow: 1px 1px 1px black;
 }
